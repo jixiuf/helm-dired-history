@@ -1,3 +1,6 @@
+* Notices
+I don't use Helm/Ivy any more, and code in this repos has not changed for sevreal years.
+I use https://github.com/karthink/consult-dir now
 * Helm Dired History
 [[http://melpa.org/#/helm-dired-history][http://melpa.org/packages/helm-dired-history-badge.svg]]
 ------------
@@ -33,9 +36,8 @@ The easiest way to get started is to install the package via [[http://melpa.org/
 (savehist-mode 1)
 
 (with-eval-after-load 'dired
-  (require 'helm-dired-history) 
+  (require 'helm-dired-history)
   ;; if you are using ido,you'd better disable ido for dired
   ;; (define-key (cdr ido-minor-mode-map-entry) [remap dired] nil) ;in ido-setup-hook
   (define-key dired-mode-map "," 'dired))
 #+END_SRC
-
